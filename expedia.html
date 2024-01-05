@@ -151,7 +151,7 @@
                                                 seeking regional trends and anomalies.</li>
                                             <li><b>Seasonal Fare Trends: </b>To reveal how flight prices and demand
                                                 fluctuate over time,
-                                                especially in relation to seasons, holidays, and weekdays.</li>
+                                                especially in relation to seasons and weekdays.</li>
                                             <li><b>Demand Analysis: </b>To quantify the market share of airlines
                                                 operating flights to JFK, identifying dominant
                                                 carriers and competitive dynamics.</li>
@@ -190,13 +190,12 @@
                                                     <li><b>Null Value Treatment: </b>Eliminated rows with missing data
                                                         to ensure dataset integrity.</li>
                                                     <li><b>Boolean to Numeric: </b>Converted boolean columns like
-                                                        'isBasicEconomy', 'isRefundable', and 'isNonStop' to numeric
-                                                        form (0 and 1).</li>
+                                                        'isBasicEconomy' to numeric form (0 & 1).</li>
                                                     <li><b>Date Transformation: </b>Transformed 'searchDate' and
                                                         'flightDate' into datetime format and 'travelDuration' into
                                                         minutes.</li>
                                                     <li><b>Additional Attributes: </b>Enriched the dataset with new
-                                                        columns for weekdays and holidays from an external source.</li>
+                                                        columns for weekdays.</li>
                                                     <li><b>Segment Standardization: </b>Unified 'segmentsAirlineCode'
                                                         and 'segmentsCabinCode', labeling as 'multiple' where necessary.
                                                     </li>
@@ -227,272 +226,64 @@
                                         <p></p>
 
                                         <!-- Geographical Distribution -->
-                                        <div class='tableauPlaceholder' id='viz1703931283215'
-                                            style='position: relative'><noscript><a href='#'><img
-                                                        alt='Geographical Distribution '
-                                                        src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ai&#47;AirlineProject_17038965271980&#47;GeographicalDistribution&#47;1_rss.png'
-                                                        style='border: none' /></a></noscript><object class='tableauViz'
-                                                style='display:none;'>
-                                                <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
-                                                <param name='embed_code_version' value='3' />
-                                                <param name='site_root' value='' />
-                                                <param name='name'
-                                                    value='AirlineProject_17038965271980&#47;GeographicalDistribution' />
-                                                <param name='tabs' value='no' />
-                                                <param name='toolbar' value='yes' />
-                                                <param name='static_image'
-                                                    value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ai&#47;AirlineProject_17038965271980&#47;GeographicalDistribution&#47;1.png' />
-                                                <param name='animate_transition' value='yes' />
-                                                <param name='display_static_image' value='yes' />
-                                                <param name='display_spinner' value='yes' />
-                                                <param name='display_overlay' value='yes' />
-                                                <param name='display_count' value='yes' />
-                                                <param name='language' value='en-US' />
-                                                <param name='filter' value='publish=yes' />
-                                            </object></div>
-                                        <script type='text/javascript'>
-                                            var divElement = document.getElementById('viz1703931283215');
-                                            var vizElement = divElement.getElementsByTagName('object')[0];
-                                            if (divElement.offsetWidth > 800) { vizElement.style.width = '1000px'; vizElement.style.height = '827px'; }
-                                            else if (divElement.offsetWidth > 500) { vizElement.style.width = '1000px'; vizElement.style.height = '827px'; }
-                                            else { vizElement.style.width = '100%'; vizElement.style.height = '727px'; }
-                                            var scriptElement = document.createElement('script');
-                                            scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
-                                            vizElement.parentNode.insertBefore(scriptElement, vizElement);                
-                                        </script>
+                                        <div class='tableauPlaceholder' id='viz1704440425327' style='position: relative'><noscript><a href='#'><img alt='Geographical Distribution ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ai&#47;AirlineProject_17038965271980&#47;GeographicalDistribution&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='AirlineProject_17038965271980&#47;GeographicalDistribution' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ai&#47;AirlineProject_17038965271980&#47;GeographicalDistribution&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1704440425327');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else { vizElement.style.width='100%';vizElement.style.height='727px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
                                         <P></P>
 
-                                        <!-- Monthly Flight Activity and Pricing Dynamics -->
-                                        <div class='tableauPlaceholder' id='viz1703926471839'
-                                            style='position: relative'>
-                                            <noscript><a href='#'><img alt='Flight Demand and Fare Trends '
-                                                        src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ex&#47;ExpediaProject-MonthlyFlightActivityandPricingDynamics&#47;FlightDemandandFareTrends&#47;1_rss.png'
-                                                        style='border: none' /></a></noscript><object class='tableauViz'
-                                                style='display:none;'>
-                                                <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
-                                                <param name='embed_code_version' value='3' />
-                                                <param name='site_root' value='' />
-                                                <param name='name'
-                                                    value='ExpediaProject-MonthlyFlightActivityandPricingDynamics&#47;FlightDemandandFareTrends' />
-                                                <param name='tabs' value='no' />
-                                                <param name='toolbar' value='yes' />
-                                                <param name='static_image'
-                                                    value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ex&#47;ExpediaProject-MonthlyFlightActivityandPricingDynamics&#47;FlightDemandandFareTrends&#47;1.png' />
-                                                <param name='animate_transition' value='yes' />
-                                                <param name='display_static_image' value='yes' />
-                                                <param name='display_spinner' value='yes' />
-                                                <param name='display_overlay' value='yes' />
-                                                <param name='display_count' value='yes' />
-                                                <param name='language' value='en-US' />
-                                            </object>
-                                        </div>
-                                        <script type='text/javascript'>
-                                            var divElement = document.getElementById('viz1703926471839');
-                                            var vizElement = divElement.getElementsByTagName('object')[0];
-                                            if (divElement.offsetWidth > 800) { vizElement.style.width = '1000px'; vizElement.style.height = '1527px'; }
-                                            else if (divElement.offsetWidth > 500) { vizElement.style.width = '1000px'; vizElement.style.height = '1527px'; }
-                                            else { vizElement.style.width = '100%'; vizElement.style.height = '877px'; }
-                                            var scriptElement = document.createElement('script');
-                                            scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
-                                            vizElement.parentNode.insertBefore(scriptElement, vizElement);                
-                                        </script>
+                                        <!-- Flight Demand and Fare Trends -->
+                                        <div class='tableauPlaceholder' id='viz1704437498984' style='position: relative'><noscript><a href='#'><img alt='Flight Demand and Fare Trends ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ex&#47;ExpediaProject-FlightDemandandFareTrends&#47;FlightDemandandFareTrends&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='ExpediaProject-FlightDemandandFareTrends&#47;FlightDemandandFareTrends' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ex&#47;ExpediaProject-FlightDemandandFareTrends&#47;FlightDemandandFareTrends&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1704437498984');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1000px';vizElement.style.height='1527px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1000px';vizElement.style.height='1527px';} else { vizElement.style.width='100%';vizElement.style.height='877px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
                                         <P></P>
 
                                         <!-- Weekly Fare Analysis -->
-                                        <div class='tableauPlaceholder' id='viz1703926737716'
-                                            style='position: relative'>
-                                            <noscript><a href='#'><img alt='Weekly Fare Analysis '
-                                                        src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ex&#47;ExpediaProject-WeeklyFareAnalysis&#47;WeeklyFareAnalysis&#47;1_rss.png'
-                                                        style='border: none' /></a></noscript><object class='tableauViz'
-                                                style='display:none;'>
-                                                <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
-                                                <param name='embed_code_version' value='3' />
-                                                <param name='site_root' value='' />
-                                                <param name='name'
-                                                    value='ExpediaProject-WeeklyFareAnalysis&#47;WeeklyFareAnalysis' />
-                                                <param name='tabs' value='no' />
-                                                <param name='toolbar' value='yes' />
-                                                <param name='static_image'
-                                                    value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ex&#47;ExpediaProject-WeeklyFareAnalysis&#47;WeeklyFareAnalysis&#47;1.png' />
-                                                <param name='animate_transition' value='yes' />
-                                                <param name='display_static_image' value='yes' />
-                                                <param name='display_spinner' value='yes' />
-                                                <param name='display_overlay' value='yes' />
-                                                <param name='display_count' value='yes' />
-                                                <param name='language' value='en-US' />
-                                            </object>
-                                        </div>
-                                        <script type='text/javascript'>
-                                            var divElement = document.getElementById('viz1703926737716');
-                                            var vizElement = divElement.getElementsByTagName('object')[0];
-                                            if (divElement.offsetWidth > 800) { vizElement.style.width = '1000px'; vizElement.style.height = '727px'; }
-                                            else if (divElement.offsetWidth > 500) { vizElement.style.width = '1000px'; vizElement.style.height = '727px'; }
-                                            else { vizElement.style.width = '100%'; vizElement.style.height = '727px'; }
-                                            var scriptElement = document.createElement('script');
-                                            scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
-                                            vizElement.parentNode.insertBefore(scriptElement, vizElement);                
-                                        </script>
+                                        <div class='tableauPlaceholder' id='viz1704437720846' style='position: relative'><noscript><a href='#'><img alt='Weekly Fare Analysis ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ex&#47;ExpediaProject-WeeklyFareAnalysis&#47;WeeklyFareAnalysis&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='ExpediaProject-WeeklyFareAnalysis&#47;WeeklyFareAnalysis' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ex&#47;ExpediaProject-WeeklyFareAnalysis&#47;WeeklyFareAnalysis&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1704437720846');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1000px';vizElement.style.height='727px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1000px';vizElement.style.height='727px';} else { vizElement.style.width='100%';vizElement.style.height='727px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
                                         <P></P>
 
                                         <!-- Fare Classification Analysis -->
-                                        <div class='tableauPlaceholder' id='viz1703926824691'
-                                            style='position: relative'>
-                                            <noscript><a href='#'><img alt='Fare Classification Analysis '
-                                                        src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ex&#47;ExpediaProject-FareClassificationAnalysis&#47;FareClassificationAnalysis&#47;1_rss.png'
-                                                        style='border: none' /></a></noscript><object class='tableauViz'
-                                                style='display:none;'>
-                                                <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
-                                                <param name='embed_code_version' value='3' />
-                                                <param name='site_root' value='' />
-                                                <param name='name'
-                                                    value='ExpediaProject-FareClassificationAnalysis&#47;FareClassificationAnalysis' />
-                                                <param name='tabs' value='no' />
-                                                <param name='toolbar' value='yes' />
-                                                <param name='static_image'
-                                                    value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ex&#47;ExpediaProject-FareClassificationAnalysis&#47;FareClassificationAnalysis&#47;1.png' />
-                                                <param name='animate_transition' value='yes' />
-                                                <param name='display_static_image' value='yes' />
-                                                <param name='display_spinner' value='yes' />
-                                                <param name='display_overlay' value='yes' />
-                                                <param name='display_count' value='yes' />
-                                                <param name='language' value='en-US' />
-                                            </object>
-                                        </div>
-                                        <script type='text/javascript'>
-                                            var divElement = document.getElementById('viz1703926824691');
-                                            var vizElement = divElement.getElementsByTagName('object')[0];
-                                            if (divElement.offsetWidth > 800) { vizElement.style.width = '1000px'; vizElement.style.height = '827px'; }
-                                            else if (divElement.offsetWidth > 500) { vizElement.style.width = '1000px'; vizElement.style.height = '827px'; }
-                                            else { vizElement.style.width = '100%'; vizElement.style.height = '727px'; }
-                                            var scriptElement = document.createElement('script');
-                                            scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
-                                            vizElement.parentNode.insertBefore(scriptElement, vizElement);                
-                                        </script>
-                                        <P></P>
-
+                                        <div class='tableauPlaceholder' id='viz1704438723256' style='position: relative'><noscript><a href='#'><img alt='Fare Classification Analysis (2) ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ex&#47;ExpediaProject-FareClassificationAnalysis&#47;FareClassificationAnalysis2&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='ExpediaProject-FareClassificationAnalysis&#47;FareClassificationAnalysis2' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ex&#47;ExpediaProject-FareClassificationAnalysis&#47;FareClassificationAnalysis2&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1704438723256');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1000px';vizElement.style.height='527px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1000px';vizElement.style.height='527px';} else { vizElement.style.width='100%';vizElement.style.height='727px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>                                        <P></P>
+                                        
                                         <!-- Dynamic Pricing Analysis -->
-                                        <div class='tableauPlaceholder' id='viz1703926908151'
-                                            style='position: relative'>
-                                            <noscript><a href='#'><img alt='Dynamic Pricing Analysis '
-                                                        src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ex&#47;ExpediaProject-DynamicPricingAnalysis&#47;DynamicPricingAnalysis&#47;1_rss.png'
-                                                        style='border: none' /></a></noscript><object class='tableauViz'
-                                                style='display:none;'>
-                                                <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
-                                                <param name='embed_code_version' value='3' />
-                                                <param name='site_root' value='' />
-                                                <param name='name'
-                                                    value='ExpediaProject-DynamicPricingAnalysis&#47;DynamicPricingAnalysis' />
-                                                <param name='tabs' value='no' />
-                                                <param name='toolbar' value='yes' />
-                                                <param name='static_image'
-                                                    value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ex&#47;ExpediaProject-DynamicPricingAnalysis&#47;DynamicPricingAnalysis&#47;1.png' />
-                                                <param name='animate_transition' value='yes' />
-                                                <param name='display_static_image' value='yes' />
-                                                <param name='display_spinner' value='yes' />
-                                                <param name='display_overlay' value='yes' />
-                                                <param name='display_count' value='yes' />
-                                                <param name='language' value='en-US' />
-                                            </object>
-                                        </div>
-                                        <script type='text/javascript'>
-                                            var divElement = document.getElementById('viz1703926908151');
-                                            var vizElement = divElement.getElementsByTagName('object')[0];
-                                            if (divElement.offsetWidth > 800) { vizElement.style.width = '1000px'; vizElement.style.height = '1527px'; }
-                                            else if (divElement.offsetWidth > 500) { vizElement.style.width = '1000px'; vizElement.style.height = '1527px'; }
-                                            else { vizElement.style.width = '100%'; vizElement.style.height = '777px'; }
-                                            var scriptElement = document.createElement('script');
-                                            scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
-                                            vizElement.parentNode.insertBefore(scriptElement, vizElement);                
-                                        </script>
+                                        <div class='tableauPlaceholder' id='viz1704438795963' style='position: relative'><noscript><a href='#'><img alt='Dynamic Pricing Analysis ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ex&#47;ExpediaProject-DynamicPricingAnalysis&#47;DynamicPricingAnalysis&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='ExpediaProject-DynamicPricingAnalysis&#47;DynamicPricingAnalysis' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ex&#47;ExpediaProject-DynamicPricingAnalysis&#47;DynamicPricingAnalysis&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1704438795963');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1000px';vizElement.style.height='1527px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1000px';vizElement.style.height='1527px';} else { vizElement.style.width='100%';vizElement.style.height='777px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
                                         <P></P>
 
                                         <!-- Airline Market Share and Pricing Analysis -->
-                                        <div class='tableauPlaceholder' id='viz1703934482093'
-                                            style='position: relative'><noscript><a href='#'><img
-                                                        alt='Airline Market Share and Pricing Analysis '
-                                                        src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ex&#47;ExpediaProject-AirlineMarketShareandPricingAnalysis&#47;AirlineMarketShareandPricingAnalysis&#47;1_rss.png'
-                                                        style='border: none' /></a></noscript><object class='tableauViz'
-                                                style='display:none;'>
-                                                <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
-                                                <param name='embed_code_version' value='3' />
-                                                <param name='site_root' value='' />
-                                                <param name='name'
-                                                    value='ExpediaProject-AirlineMarketShareandPricingAnalysis&#47;AirlineMarketShareandPricingAnalysis' />
-                                                <param name='tabs' value='no' />
-                                                <param name='toolbar' value='yes' />
-                                                <param name='static_image'
-                                                    value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ex&#47;ExpediaProject-AirlineMarketShareandPricingAnalysis&#47;AirlineMarketShareandPricingAnalysis&#47;1.png' />
-                                                <param name='animate_transition' value='yes' />
-                                                <param name='display_static_image' value='yes' />
-                                                <param name='display_spinner' value='yes' />
-                                                <param name='display_overlay' value='yes' />
-                                                <param name='display_count' value='yes' />
-                                                <param name='language' value='en-US' />
-                                            </object></div>
-                                        <script
-                                            type='text/javascript'>                    
-                                            var divElement = document.getElementById('viz1703934482093'); 
-                                            var vizElement = divElement.getElementsByTagName('object')[0]; 
-                                            if (divElement.offsetWidth > 800) { vizElement.style.width = '1000px'; vizElement.style.height = '2127px'; } 
-                                            else if (divElement.offsetWidth > 500) { vizElement.style.width = '1000px'; vizElement.style.height = '2127px'; } 
-                                            else { vizElement.style.width = '100%'; vizElement.style.height = '1277px'; } 
-                                            var scriptElement = document.createElement('script'); 
-                                            scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; 
-                                            vizElement.parentNode.insertBefore(scriptElement, vizElement);                
-                                        </script>
+                                        <div class='tableauPlaceholder' id='viz1704438916070' style='position: relative'><noscript><a href='#'><img alt='Airline Market Share and Pricing Analysis ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ex&#47;ExpediaProject-AirlineMarketShareandPricingAnalysis&#47;AirlineMarketShareandPricingAnalysis&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='ExpediaProject-AirlineMarketShareandPricingAnalysis&#47;AirlineMarketShareandPricingAnalysis' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ex&#47;ExpediaProject-AirlineMarketShareandPricingAnalysis&#47;AirlineMarketShareandPricingAnalysis&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1704438916070');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1000px';vizElement.style.height='2127px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1000px';vizElement.style.height='2127px';} else { vizElement.style.width='100%';vizElement.style.height='1277px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
                                         <P></P>
 
                                         <!-- Cabin Class Pricing Analysis -->
-                                        <div class='tableauPlaceholder' id='viz1703934414133'
-                                            style='position: relative'><noscript><a href='#'><img
-                                                        alt='Cabin Class Pricing Analysis '
-                                                        src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ex&#47;ExpediaProject-CabinClassPricingAnalysis&#47;CabinClassPricingAnalysis&#47;1_rss.png'
-                                                        style='border: none' /></a></noscript><object class='tableauViz'
-                                                style='display:none;'>
-                                                <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
-                                                <param name='embed_code_version' value='3' />
-                                                <param name='site_root' value='' />
-                                                <param name='name'
-                                                    value='ExpediaProject-CabinClassPricingAnalysis&#47;CabinClassPricingAnalysis' />
-                                                <param name='tabs' value='no' />
-                                                <param name='toolbar' value='yes' />
-                                                <param name='static_image'
-                                                    value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ex&#47;ExpediaProject-CabinClassPricingAnalysis&#47;CabinClassPricingAnalysis&#47;1.png' />
-                                                <param name='animate_transition' value='yes' />
-                                                <param name='display_static_image' value='yes' />
-                                                <param name='display_spinner' value='yes' />
-                                                <param name='display_overlay' value='yes' />
-                                                <param name='display_count' value='yes' />
-                                                <param name='language' value='en-US' />
-                                                <param name='filter' value='publish=yes' />
-                                            </object></div>
-                                        <script type='text/javascript'>
-                                            var divElement = document.getElementById('viz1703934414133');
-                                            var vizElement = divElement.getElementsByTagName('object')[0];
-                                            if (divElement.offsetWidth > 800) { vizElement.style.width = '1000px'; vizElement.style.height = '1427px'; }
-                                            else if (divElement.offsetWidth > 500) { vizElement.style.width = '1000px'; vizElement.style.height = '1427px'; }
-                                            else { vizElement.style.width = '100%'; vizElement.style.height = '727px'; }
-                                            var scriptElement = document.createElement('script');
-                                            scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
-                                            vizElement.parentNode.insertBefore(scriptElement, vizElement);                
-                                        </script>
+                                        <div class='tableauPlaceholder' id='viz1704439035351' style='position: relative'><noscript><a href='#'><img alt='Cabin Class Pricing Analysis ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ex&#47;ExpediaProject-CabinClassPricingAnalysis&#47;CabinClassPricingAnalysis&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='ExpediaProject-CabinClassPricingAnalysis&#47;CabinClassPricingAnalysis' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ex&#47;ExpediaProject-CabinClassPricingAnalysis&#47;CabinClassPricingAnalysis&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1704439035351');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1000px';vizElement.style.height='1427px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1000px';vizElement.style.height='1427px';} else { vizElement.style.width='100%';vizElement.style.height='727px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
                                         <P></P>
 
+                                    </div>
+                                    <div class="single_bloginner s_blogIner_3 margin-top-40">
+                                        <div class="separator2"></div>
+                                        <h3>Key Takeaways</h3>
+                                        <p></p>
+                                        
                                         <p>
-                                            In summary, the analysis presents a multifaceted view of the airline
-                                            industry's dynamics in relation to JFK-bound flights. It covers geographic
-                                            and temporal demand, day-of-week pricing patterns, market share, and pricing
-                                            strategies across different classes.
+                                            <ol>
+                                                <li>
+                                                    Summer months showed an unexpected trend: despite high demand, flight fares did not spike, suggesting competitive pricing 
+                                                    among airlines to attract customers. This price strategy ensured that revenue remained high due to increased passenger volume.
+                                                </li>
+                                                <br>
+                                                <li>Fares for flights with ample seats remain stable, while those nearing full capacity increase sharply as the travel date approaches. 
+                                                    This suggests a strategic approach for travelers: to monitor flight capacities well in advance. For flights not near full capacity, 
+                                                    they could potentially benefit from waiting, as prices may not significantly increase. However, for nearly full flights, 
+                                                    early booking is advisable to avoid higher costs as the travel date gets closer.
+                                                </li>
+                                                <br>
+                                                <li>
+                                                    American Airlines (AA) emerges as the dominant carrier for JFK-bound flights, reflecting its robust network and strategic presence 
+                                                    at these airports. This suggests a potentially strong brand preference or more comprehensive service offerings compared to 
+                                                    Delta (DL) and JetBlue (B6), which also hold substantial shares.
+                                                </li>
+                                            </ol>
                                         </p>
                                         <p>
-                                            Overall, the findings reflect the airlines' adaptive responses to market
-                                            dynamics and consumer behavior. This overview not only aids in understanding
-                                            the current state of airline operations but also serves as a strategic tool
-                                            for anticipating future trends in the aviation sector, ensuring that
-                                            stakeholders can navigate the complexities of the industry with data-driven
-                                            confidence.
+                                            The analysis offers a comprehensive look at the airline market's behavior towards JFK flights, exploring regional demand, fare variation by weekday, 
+                                            carrier dominance, and class-based pricing strategies. It reveals how airlines adjust to market shifts and passenger preferences. 
+                                            This overview is not just a snapshot of current operations; it's a predictive guide for future industry movements, equipping stakeholders with the 
+                                            insights for informed decision-making.
                                         </p>
-
                                     </div>
 
                                     <div class="text-center  margin-top-60">
