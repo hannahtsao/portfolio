@@ -160,18 +160,18 @@
                                         <p>
                                         <ol>
                                             <li>
-                                                <b>Data Preprocessing and Cleaning (Python):</b>
+                                                <b>Data Preprocessing (Python):</b>
                                                 <p>
-                                                    The data preprocessing phase involved parsing the 'STUB_LABEL' to extract demographic information 
-                                                    into new columns ('SEX', 'RACE', 'ETHNICITY', 'AGE'). This step was crucial for organizing the 
-                                                    dataset systematically. Key actions included:
+                                                    During the data preprocessing phase, we systematically organized the dataset to ensure it was well-structured for analysis. 
+                                                    Key actions included:
                                                 <ul>
-                                                    <li><b>Column Removal: </b>Dropped the 'FLAG' column to focus on relevant variables. 
-                                                        The 'FLAG' column identifies the presence of null values in the 'ESTIMATE' column, making it 
-                                                        irrelevant for the analysis. </li>
-                                                    <li><b>Null Value Treatment: </b>Removed rows with null values to ensure data completeness. This step reduced 
-                                                        the dataset to 1,050 rows, dropping 5,178 rows, as the dataset contained duplicate entries with different 
-                                                        subcategories. This cleaned dataset ensures reliable and accurate analysis.</li>
+                                                    <li><b>Parsing Labels: </b>Extracted demographic information from the 'STUB_LABEL' into new columns 
+                                                        ('SEX', 'RACE', 'ETHNICITY', 'AGE').</li>
+                                                    <li><b>Column Removal: </b>Dropped the 'FLAG' column, which identifies the presence of null values in the 
+                                                        'ESTIMATE' column, as it was irrelevant for our analysis.</li>
+                                                    <li><b>Null Value Treatment: </b>Removed rows with null values to ensure data completeness, reducing the dataset 
+                                                        from 6,228 to 1,050 rows. This step eliminated duplicate entries with different subcategories, resulting in a 
+                                                        clean and reliable dataset for accurate analysis.</li>
                                                 </ul>
                                                 </p>
                                                 <p></p>
